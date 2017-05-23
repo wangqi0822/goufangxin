@@ -1,0 +1,468 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>购物车逻辑分析</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/购物车逻辑分析/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/购物车逻辑分析/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u678" class="ax_default heading_3">
+        <div id="u678_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u679" class="text">
+          <p><span>购物车页面逻辑</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u680" class="ax_default box_2">
+        <img id="u680_img" class="img " src="images/实体属性关系图/u8.png"/>
+        <!-- Unnamed () -->
+        <div id="u681" class="text">
+          <p><span>是否有数据</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u682" class="ax_default box_2">
+        <div id="u682_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u683" class="text">
+          <p><span>进入“购物车”页</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u684" class="ax_default box_2">
+        <div id="u684_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u685" class="text">
+          <p><span>显示“购物车是空的”，去购物</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u686" class="ax_default box_2">
+        <div id="u686_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u687" class="text">
+          <p><span>显示选购SKU列表</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u688" class="ax_default box_2">
+        <img id="u688_img" class="img " src="images/实体属性关系图/u8.png"/>
+        <!-- Unnamed () -->
+        <div id="u689" class="text">
+          <p><span>SKU是否</span></p><p><span>未删除</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u690" class="ax_default box_2">
+        <div id="u690_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u691" class="text">
+          <p><span>显示选购SKU列表</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u692" class="ax_default box_2">
+        <img id="u692_img" class="img " src="images/实体属性关系图/u8.png"/>
+        <!-- Unnamed () -->
+        <div id="u693" class="text">
+          <p><span>SKU库存是否有货</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u694" class="ax_default box_2">
+        <div id="u694_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u695" class="text">
+          <p><span>正常显示商品</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u696" class="ax_default _流程形状">
+        <img id="u696_seg0" class="img " src="images/订单状态对库存影响分析/u382_seg0.png" alt="u696_seg0"/>
+        <img id="u696_seg1" class="img " src="images/订单状态对库存影响分析/u362_seg1.png" alt="u696_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u697" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u698" class="ax_default _流程形状">
+        <img id="u698_seg0" class="img " src="images/购物车逻辑分析/u698_seg0.png" alt="u698_seg0"/>
+        <img id="u698_seg1" class="img " src="images/订单状态对库存影响分析/u366_seg3.png" alt="u698_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u699" class="text">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u700" class="ax_default _流程形状">
+        <img id="u700_seg0" class="img " src="images/购物车逻辑分析/u700_seg0.png" alt="u700_seg0"/>
+        <img id="u700_seg1" class="img " src="images/订单状态对库存影响分析/u362_seg1.png" alt="u700_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u701" class="text">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u702" class="ax_default _流程形状">
+        <img id="u702_seg0" class="img " src="images/购物车逻辑分析/u702_seg0.png" alt="u702_seg0"/>
+        <img id="u702_seg1" class="img " src="images/订单状态对库存影响分析/u362_seg1.png" alt="u702_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u703" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u704" class="ax_default _流程形状">
+        <img id="u704_seg0" class="img " src="images/购物车逻辑分析/u704_seg0.png" alt="u704_seg0"/>
+        <img id="u704_seg1" class="img " src="images/订单状态对库存影响分析/u362_seg1.png" alt="u704_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u705" class="text">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u706" class="ax_default _流程形状">
+        <img id="u706_seg0" class="img " src="images/订单状态对库存影响分析/u380_seg0.png" alt="u706_seg0"/>
+        <img id="u706_seg1" class="img " src="images/订单状态对库存影响分析/u362_seg1.png" alt="u706_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u707" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u708" class="ax_default _流程形状">
+        <img id="u708_seg0" class="img " src="images/购物车逻辑分析/u708_seg0.png" alt="u708_seg0"/>
+        <img id="u708_seg1" class="img " src="images/订单状态对库存影响分析/u362_seg1.png" alt="u708_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u709" class="text">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u710" class="ax_default box_2">
+        <div id="u710_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u711" class="text">
+          <p><span>商品灰色显示。抱歉，商品已经下架，无法购买</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u712" class="ax_default _流程形状">
+        <img id="u712_seg0" class="img " src="images/购物车逻辑分析/u698_seg0.png" alt="u712_seg0"/>
+        <img id="u712_seg1" class="img " src="images/订单状态对库存影响分析/u366_seg3.png" alt="u712_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u713" class="text">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u714" class="ax_default box_2">
+        <img id="u714_img" class="img " src="images/实体属性关系图/u8.png"/>
+        <!-- Unnamed () -->
+        <div id="u715" class="text">
+          <p><span>SKU库存是否足够</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u716" class="ax_default box_2">
+        <div id="u716_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u717" class="text">
+          <p><span>商品灰色显示。商品已经售罄，请等待！</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u718" class="ax_default _流程形状">
+        <img id="u718_seg0" class="img " src="images/购物车逻辑分析/u698_seg0.png" alt="u718_seg0"/>
+        <img id="u718_seg1" class="img " src="images/订单状态对库存影响分析/u366_seg3.png" alt="u718_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u719" class="text">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u720" class="ax_default box_2">
+        <div id="u720_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u721" class="text">
+          <p><span>库存只剩**件，请调</span></p><p><span>整数目</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u722" class="ax_default _流程形状">
+        <img id="u722_seg0" class="img " src="images/购物车逻辑分析/u698_seg0.png" alt="u722_seg0"/>
+        <img id="u722_seg1" class="img " src="images/订单状态对库存影响分析/u366_seg3.png" alt="u722_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u723" class="text">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u724" class="ax_default _流程形状">
+        <img id="u724_seg0" class="img " src="images/查看和挑选商品/u644_seg0.png" alt="u724_seg0"/>
+        <img id="u724_seg1" class="img " src="images/订单状态对库存影响分析/u362_seg1.png" alt="u724_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u725" class="text">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u726" class="ax_default box_2">
+        <div id="u726_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u727" class="text">
+          <p><span>减少数量</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u728" class="ax_default box_2">
+        <div id="u728_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u729" class="text">
+          <p><span>增加数量</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u730" class="ax_default box_2">
+        <div id="u730_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u731" class="text">
+          <p><span>删除选购SKU</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u732" class="ax_default _流程形状">
+        <img id="u732_seg0" class="img " src="images/购物车逻辑分析/u732_seg0.png" alt="u732_seg0"/>
+        <img id="u732_seg1" class="img " src="images/订单状态对库存影响分析/u362_seg1.png" alt="u732_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u733" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u734" class="ax_default _流程形状">
+        <img id="u734_seg0" class="img " src="images/购物车逻辑分析/u734_seg0.png" alt="u734_seg0"/>
+        <img id="u734_seg1" class="img " src="images/购物车逻辑分析/u734_seg1.png" alt="u734_seg1"/>
+        <img id="u734_seg2" class="img " src="images/购物车逻辑分析/u734_seg2.png" alt="u734_seg2"/>
+        <img id="u734_seg3" class="img " src="images/订单状态对库存影响分析/u362_seg1.png" alt="u734_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u735" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u736" class="ax_default _流程形状">
+        <img id="u736_seg0" class="img " src="images/购物车逻辑分析/u734_seg0.png" alt="u736_seg0"/>
+        <img id="u736_seg1" class="img " src="images/购物车逻辑分析/u736_seg1.png" alt="u736_seg1"/>
+        <img id="u736_seg2" class="img " src="images/购物车逻辑分析/u734_seg2.png" alt="u736_seg2"/>
+        <img id="u736_seg3" class="img " src="images/订单状态对库存影响分析/u362_seg1.png" alt="u736_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u737" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u738" class="ax_default _流程形状">
+        <img id="u738_seg0" class="img " src="images/购物车逻辑分析/u738_seg0.png" alt="u738_seg0"/>
+        <img id="u738_seg1" class="img " src="images/购物车逻辑分析/u738_seg1.png" alt="u738_seg1"/>
+        <img id="u738_seg2" class="img " src="images/购物车逻辑分析/u738_seg2.png" alt="u738_seg2"/>
+        <img id="u738_seg3" class="img " src="images/订单状态对库存影响分析/u366_seg3.png" alt="u738_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u739" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u740" class="ax_default box_2">
+        <div id="u740_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u741" class="text">
+          <p><span>去结算</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u742" class="ax_default box_2">
+        <div id="u742_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u743" class="text">
+          <p><span>修改成功</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (菱形) -->
+      <div id="u744" class="ax_default box_2">
+        <img id="u744_img" class="img " src="images/实体属性关系图/u8.png"/>
+        <!-- Unnamed () -->
+        <div id="u745" class="text">
+          <p><span>确认是否删除</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u746" class="ax_default box_2">
+        <div id="u746_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u747" class="text">
+          <p><span>修改成功</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u748" class="ax_default _流程形状">
+        <img id="u748_seg0" class="img " src="images/购物车逻辑分析/u748_seg0.png" alt="u748_seg0"/>
+        <img id="u748_seg1" class="img " src="images/订单状态对库存影响分析/u366_seg3.png" alt="u748_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u749" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u750" class="ax_default _流程形状">
+        <img id="u750_seg0" class="img " src="images/购物车逻辑分析/u750_seg0.png" alt="u750_seg0"/>
+        <img id="u750_seg1" class="img " src="images/订单状态对库存影响分析/u362_seg1.png" alt="u750_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u751" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u752" class="ax_default _流程形状">
+        <img id="u752_seg0" class="img " src="images/购物车逻辑分析/u750_seg0.png" alt="u752_seg0"/>
+        <img id="u752_seg1" class="img " src="images/订单状态对库存影响分析/u362_seg1.png" alt="u752_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u753" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u754" class="ax_default _流程形状">
+        <img id="u754_seg0" class="img " src="images/购物车逻辑分析/u754_seg0.png" alt="u754_seg0"/>
+        <img id="u754_seg1" class="img " src="images/订单状态对库存影响分析/u362_seg1.png" alt="u754_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u755" class="text">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u756" class="ax_default box_2">
+        <div id="u756_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u757" class="text">
+          <p><span>修改后商品</span></p><p><span>列表</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u758" class="ax_default _流程形状">
+        <img id="u758_seg0" class="img " src="images/购物车逻辑分析/u758_seg0.png" alt="u758_seg0"/>
+        <img id="u758_seg1" class="img " src="images/购物车逻辑分析/u734_seg1.png" alt="u758_seg1"/>
+        <img id="u758_seg2" class="img " src="images/购物车逻辑分析/u758_seg2.png" alt="u758_seg2"/>
+        <img id="u758_seg3" class="img " src="images/订单状态对库存影响分析/u362_seg1.png" alt="u758_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u759" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u760" class="ax_default _流程形状">
+        <img id="u760_seg0" class="img " src="images/购物车逻辑分析/u760_seg0.png" alt="u760_seg0"/>
+        <img id="u760_seg1" class="img " src="images/订单状态对库存影响分析/u362_seg1.png" alt="u760_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u761" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u762" class="ax_default _流程形状">
+        <img id="u762_seg0" class="img " src="images/购物车逻辑分析/u762_seg0.png" alt="u762_seg0"/>
+        <img id="u762_seg1" class="img " src="images/购物车逻辑分析/u762_seg1.png" alt="u762_seg1"/>
+        <img id="u762_seg2" class="img " src="images/购物车逻辑分析/u762_seg2.png" alt="u762_seg2"/>
+        <img id="u762_seg3" class="img " src="images/订单状态对库存影响分析/u362_seg1.png" alt="u762_seg3"/>
+        <!-- Unnamed () -->
+        <div id="u763" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u764" class="ax_default _流程形状">
+        <img id="u764_seg0" class="img " src="images/购物车逻辑分析/u764_seg0.png" alt="u764_seg0"/>
+        <img id="u764_seg1" class="img " src="images/购物车逻辑分析/u764_seg1.png" alt="u764_seg1"/>
+        <img id="u764_seg2" class="img " src="images/商品相关逻辑分析/u332_seg3.png" alt="u764_seg2"/>
+        <!-- Unnamed () -->
+        <div id="u765" class="text" style="display:none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (连接线) -->
+      <div id="u766" class="ax_default _流程形状">
+        <img id="u766_seg0" class="img " src="images/购物车逻辑分析/u766_seg0.png" alt="u766_seg0"/>
+        <img id="u766_seg1" class="img " src="images/购物车逻辑分析/u766_seg1.png" alt="u766_seg1"/>
+        <!-- Unnamed () -->
+        <div id="u767" class="text">
+          <p><span>否</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
